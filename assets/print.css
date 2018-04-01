@@ -1,0 +1,107 @@
+@page {
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    body {
+        font-size: 12px !important;
+        width: 100% !important;
+        margin-top: 0 !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    a, a:hover, a:visited, a:active {
+        color: #000 !important;
+        text-decoration: none !important;
+    }
+
+    h1, h2, h3, h4, h5, h6, .header {
+        page-break-after: avoid;
+        page-break-inside: avoid
+    }
+
+    img {
+        page-break-inside: avoid;
+        page-break-after: avoid;
+    }
+
+    blockquote, table, pre {
+        page-break-inside: avoid
+    } 
+
+    ul, ol, dl {
+        page-break-before: avoid
+    }
+
+    .row {
+        page-break-after: avoid;
+    }
+
+    .icon {
+        font-size: 9px !important;
+        height: 9px !important;
+    }
+
+    .noprint {
+        display: none !important;
+    }
+
+    #main {
+        width: 100% !important;
+        margin-top: 0 !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    #banner {
+        background: #000 !important;
+        background-color: #000 !important;
+        color: #fff !important;
+    }
+
+    #content {
+        color: #000 !important;
+        background: #fff !important;
+    }
+
+    #content p {
+        font-size: 13px !important;
+        line-height: 1.2rem !important;
+    }
+
+    #sidebar {
+        color: #000 !important;
+        background: #e9e9e9 !important;
+    }
+
+    #skills h5, #software h5 {
+        font-size: 12px !important;
+    }
+
+    #skills h5 .sub.header, #software h5 .sub.header {
+        font-size: 10px !important;
+    }
+}

@@ -1,44 +1,44 @@
 <div class="ui stackable grid">
-    <div class="row">
+    <div id="profile_location" class="row">
         <div class="sixteen wide column">
             <h5 class="ui header">
                 <div class="content">
                     Location
-                    <div class="sub header">{{ site.data.personal.location }}</div>
+                    <div class="sub header"><i class="map marker icon"></i> <a target="_blank" href="https://goo.gl/maps/kiZXraeAmZH2">{{ site.data.personal.location }}</a></div>
                 </div>
             </h5>
         </div>
     </div>
 
-    <div class="row">
+    <div id="profile_phone" class="row">
         <div class="sixteen wide column">
             <h5 class="ui header">
                 <div class="content">
                     Phone
-                    <div class="sub header">{{ site.data.personal.phone }}</div>
+                    <div class="sub header"><i class="phone icon"></i> <a href="tel:{{ site.data.personal.phone }}">{{ site.data.personal.phone }}</a></div>
                 </div>
             </h5>
         </div>
     </div>
 
-    <div class="row">
+    <div id="profile_email" class="row">
         <div class="sixteen wide column">
             <h5 class="ui header">
                 <div class="content">
                     Email
-                    <div class="sub header">{{ site.data.personal.email }}</div>
+                    <div class="sub header"><i class="envelope icon"></i> <a href="mailto:{{ site.data.personal.email }}">{{ site.data.personal.email }}</a></div>
                 </div>
             </h5>
         </div>
     </div>
 
-    <div class="row">
+    <div id="profile_links" class="row">
         <div class="sixteen wide column">
             <h5 class="ui header">Links</h5>
 
             <div class="ui list">
                 {% for link in site.data.links %}
-                <div class="item">
+                <div class="item {% if link.noprint == true %}noprint{% endif %}">
                     <i class="{{ link.icon }} in icon"></i>
                     <div class="content">
                         <a target="_blank" href="{{ link.url }}">{{ link.title }}</a>

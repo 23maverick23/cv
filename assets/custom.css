@@ -1,0 +1,33 @@
+body {
+    color: #2c3e50 !important;
+}
+
+h1, h2, h3, h4, h5, .header {
+    color: #2c3e50 !important;
+}
+
+a, a:visited {
+    color: #3498db !important;
+}
+
+a:hover, a:active {
+    color: #2980b9 !important;
+}
+
+#banner {
+    background: #2d3436 !important;
+    color: #fff !important;
+}
+
+#banner h1, #banner h2, #banner h3, #banner h4, #banner h5, #banner .header {
+    color: #fff !important;
+}
+
+#sidebar {
+    background: #ecf0f1 !important;
+}
+
+#content p {
+    font-size: 1.3rem !important;
+    line-height: 2rem !important;
+}

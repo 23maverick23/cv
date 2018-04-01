@@ -1,2 +1,3 @@
 # resume
-resume.rymo.io
+
+ryancmorrissey.com/resume

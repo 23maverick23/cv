@@ -12,18 +12,16 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/semantic.min.css">
     <link rel="stylesheet" href="{{ '/assets/flatly.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/custom.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/print.css' | relative_url }}">
 </head>
 <body>
-    <div class="ui celled stackable grid container">
+    <div id="main" class="ui celled stackable grid container">
         <!-- Page Banner -->
         {% include banner.html %}
 
         <!-- Main Content -->
         {% include main.html %}
     </div>
-
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/semantic.min.js"></script>
 </body>
 </html>
