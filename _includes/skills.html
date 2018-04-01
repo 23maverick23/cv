@@ -1,0 +1,27 @@
+<div class="ui stackable grid">
+    {% for skill in site.data.skills %}
+    <div class="row">
+        <div class="eight wide column">
+            <h5 class="ui header">{{ skill.name }}</h5>
+        </div>
+        <div class="eight wide right aligned column">
+            <h5 class="ui header">
+                <div class="content">
+                    {% assign circles = skill.rating | minus: 0 %}
+                    {% assign outlines = skill.max_rating | minus: skill.rating %}
+
+                    {% for c in (1..circles) %}
+                    <i class="fitted circle icon"></i>
+                    {% endfor %}
+
+                    {% for o in (1..outlines) %}
+                    <i class="fitted circle outline icon"></i>
+                    {% endfor %}
+
+                    <div class="sub header">{{ skill.level }} / {{ skill.tenure }}</div>
+                </div>
+            </h5>
+        </div>
+    </div>
+    {% endfor %}
+</div>

@@ -1,0 +1,15 @@
+<div class="ui stackable grid">
+    {% for school in site.data.education %}
+    <div class="row">
+        <div class="three wide column">
+            <h5 class="ui header">{{ school.date }}</h5>
+        </div>
+        <div class="thirteen wide column">
+            <div class="ui medium header">
+                {{ school.degree }}, {{ school.name }}
+                <div class="sub header">{{ school.studies | join: ", " }} - {{ school.location }}</div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>

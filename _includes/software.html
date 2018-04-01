@@ -1,0 +1,27 @@
+<div class="ui stackable grid">
+    {% for app in site.data.software %}
+    <div class="row">
+        <div class="eight wide column">
+            <h5 class="ui header">{{ app.name }}</h5>
+        </div>
+        <div class="eight wide right aligned column">
+            <h5 class="ui header">
+                <div class="content">
+                    {% assign circles = app.rating | minus: 0 %}
+                    {% assign outlines = app.max_rating | minus: app.rating %}
+
+                    {% for c in (1..circles) %}
+                    <i class="fitted circle icon"></i>
+                    {% endfor %}
+
+                    {% for o in (1..outlines) %}
+                    <i class="fitted circle outline icon"></i>
+                    {% endfor %}
+
+                    <div class="sub header">{{ app.level }} / {{ app.tenure }}</div>
+                </div>
+            </h5>
+        </div>
+    </div>
+    {% endfor %}
+</div>

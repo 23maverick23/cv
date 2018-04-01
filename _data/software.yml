@@ -1,0 +1,17 @@
+- name: "NetSuite"
+  tenure: "9 yrs"
+  level: "Expert"
+  rating: 5
+  max_rating: 5
+
+- name: "OpenAir"
+  tenure: "10 yrs"
+  level: "Master"
+  rating: 5
+  max_rating: 5
+
+- name: "Salesforce"
+  tenure: "2 yrs"
+  level: "Novice"
+  rating: 2
+  max_rating: 5

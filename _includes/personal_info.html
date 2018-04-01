@@ -1,0 +1,51 @@
+<div class="ui stackable grid">
+    <div class="row">
+        <div class="sixteen wide column">
+            <h5 class="ui header">
+                <div class="content">
+                    Location
+                    <div class="sub header">{{ site.data.personal.location }}</div>
+                </div>
+            </h5>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="sixteen wide column">
+            <h5 class="ui header">
+                <div class="content">
+                    Phone
+                    <div class="sub header">{{ site.data.personal.phone }}</div>
+                </div>
+            </h5>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="sixteen wide column">
+            <h5 class="ui header">
+                <div class="content">
+                    Email
+                    <div class="sub header">{{ site.data.personal.email }}</div>
+                </div>
+            </h5>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="sixteen wide column">
+            <h5 class="ui header">Links</h5>
+
+            <div class="ui list">
+                {% for link in site.data.links %}
+                <div class="item">
+                    <i class="{{ link.icon }} in icon"></i>
+                    <div class="content">
+                        <a target="_blank" href="{{ link.url }}">{{ link.title }}</a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

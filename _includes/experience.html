@@ -1,0 +1,20 @@
+<div class="ui stackable grid">
+    {% for job in site.data.experience %}
+    <div class="row">
+        <div class="three wide column">
+            <h5 class="ui header">{{ job.start }} - {{ job.finish }}</h5>
+        </div>
+        <div class="thirteen wide column">
+            <div class="ui medium header">
+                {{ job.title }}
+                <div class="sub header">{{ job.company }} - {{ job.location }}</div>
+            </div>
+            <ul class="ui list">
+                {% for highlight in job.highlights %}
+                <li>{{ highlight }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    {% endfor %}
+</div>
