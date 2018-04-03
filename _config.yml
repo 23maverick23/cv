@@ -44,8 +44,10 @@ future:      false
 unpublished: false
 
 # Plugins
-whitelist: []
-plugins:   []
+whitelist:
+  - jekyll-redirect-from
+plugins:
+  - jekyll-redirect-from
 
 # Conversion
 markdown:    kramdown
