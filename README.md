@@ -1,3 +1,3 @@
 # resume
 
-ryancmorrissey.com/resume
+ryancmorrissey.com/cv
