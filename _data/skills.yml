@@ -10,11 +10,11 @@
   rating: 3
   max_rating: 5
 
-- name: "Unix/Bash"
-  tenure: "5 yrs"
-  level: "Novice"
-  rating: 2
-  max_rating: 5
+# - name: "Unix/Bash"
+#   tenure: "5 yrs"
+#   level: "Novice"
+#   rating: 2
+#   max_rating: 5
 
 - name: "SQL"
   tenure: "4 yrs"

@@ -1,10 +1,10 @@
 <div id="skills" class="ui stackable grid">
     {% for skill in site.data.skills %}
     <div class="row">
-        <div class="eight wide column">
+        <div class="seven wide column">
             <h5 class="ui header">{{ skill.name }}</h5>
         </div>
-        <div class="eight wide right aligned column">
+        <div class="nine wide right aligned column">
             <h5 class="ui header">
                 <div class="content">
                     {% assign circles = skill.rating | minus: 0 %}
