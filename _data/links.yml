@@ -11,7 +11,7 @@
 - url: "https://github.com/23maverick23"
   title: "/23maverick23"
   icon: "github"
-  noprint: false
+  noprint: true
 
 - url: "https://youtu.be/209RnUXr7P4"
   title: "/marketing pitch"

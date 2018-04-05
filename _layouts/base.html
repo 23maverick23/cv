@@ -10,6 +10,7 @@
     <!-- Site Properties -->
     <title>{{ site.name }}</title>
     <meta name="description" content="{{ site.description }}">
+    <meta name="subject" content="{{ site.description }}">
     <meta name="author" content="{{ site.author }}">
     <meta name="designer" content="{{ site.author }}">
     <meta name="publisher" content="{{ site.author }}">
@@ -47,6 +48,9 @@
 
         <!-- Main Content -->
         {% include main.html %}
+
+        <!-- Page Footer -->
+        {% include footer.html %}
     </div>
 </body>
 </html>

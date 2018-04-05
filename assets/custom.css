@@ -31,3 +31,7 @@ a:hover, a:active {
     font-size: 1.3rem !important;
     line-height: 2rem !important;
 }
+
+#footer {
+    color: #7f8c8d !important;
+}

@@ -38,8 +38,38 @@
     }
 
     h1, h2, h3, h4, h5, h6, .header {
+        color: #000 !important; /* Black prints faster */
         page-break-after: avoid;
-        page-break-inside: avoid
+        page-break-inside: avoid;
+    }
+
+    h1 {
+        font-size: 1.6rem !important;
+        margin-top: 0px !important;
+    }
+
+    h2 {
+        font-size: 1.3rem !important;
+    }
+
+    h3 {
+        font-size: 1.1rem !important;
+    }
+
+    h4 {
+        font-size: 0.95rem !important;
+    }
+
+    h5 {
+        font-size: 0.85rem !important;
+    }
+
+    .header.medium {
+        font-size: 1rem !important;
+    }
+
+    .header.medium > .sub {
+        font-size: 0.85rem !important;
     }
 
     img {
@@ -60,7 +90,7 @@
     }
 
     .icon {
-        font-size: 9px !important;
+        font-size: .85rem !important;
         height: 9px !important;
     }
 

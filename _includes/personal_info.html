@@ -1,34 +1,26 @@
 <div class="ui stackable grid">
     <div id="profile_location" class="row">
         <div class="sixteen wide column">
-            <h5 class="ui header">
-                <div class="content">
-                    Location
-                    <div class="sub header"><i class="map marker icon"></i> <a target="_blank" href="https://goo.gl/maps/kiZXraeAmZH2">{{ site.data.personal.location }}</a></div>
+            <div class="ui list">
+                <div class="item ">
+                    <i class="map marker icon"></i>
+                    <div class="content">
+                        <a target="_blank" href="https://goo.gl/maps/kiZXraeAmZH2">{{ site.data.personal.location }}</a>
+                    </div>
                 </div>
-            </h5>
-        </div>
-    </div>
-
-    <div id="profile_phone" class="row">
-        <div class="sixteen wide column">
-            <h5 class="ui header">
-                <div class="content">
-                    Phone
-                    <div class="sub header"><i class="phone icon"></i> <a href="tel:{{ site.data.personal.phone }}">{{ site.data.personal.phone }}</a></div>
+                <div class="item ">
+                    <i class="phone icon"></i>
+                    <div class="content">
+                        <a href="tel:{{ site.data.personal.phone }}">{{ site.data.personal.phone }}</a>
+                    </div>
                 </div>
-            </h5>
-        </div>
-    </div>
-
-    <div id="profile_email" class="row">
-        <div class="sixteen wide column">
-            <h5 class="ui header">
-                <div class="content">
-                    Email
-                    <div class="sub header"><i class="envelope icon"></i> <a href="mailto:{{ site.data.personal.email }}">{{ site.data.personal.email }}</a></div>
+                <div class="item ">
+                    <i class="envelope icon"></i>
+                    <div class="content">
+                        <a href="mailto:{{ site.data.personal.email }}">{{ site.data.personal.email }}</a>
+                    </div>
                 </div>
-            </h5>
+            </div>
         </div>
     </div>
 
