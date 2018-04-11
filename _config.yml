@@ -58,9 +58,9 @@ unpublished: false
 
 # Plugins
 whitelist:
-  - jekyll-redirect-from
+  # - jekyll-redirect-from
 plugins:
-  - jekyll-redirect-from
+  # - jekyll-redirect-from
 
 # Conversion
 markdown:    kramdown
